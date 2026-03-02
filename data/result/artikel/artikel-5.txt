@@ -1,0 +1,54 @@
+HTML
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Menjalankan rutinitas akademik di tengah ibadah puasa memerlukan perencanaan yang sangat matang agar energi tubuh tetap terjaga sekaligus memastikan semua target pembelajaran tetap tercapai sesuai dengan jadwal yang telah ditetapkan sebelumnya. Mahasiswa harus mampu menyeimbangkan waktu antara kewajiban spiritual dan tuntutan profesional agar mereka tidak kehilangan momentum dalam membangun portofolio yang kompetitif demi menghadapi persaingan dunia kerja yang semakin ketat di masa depan.</span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Produktivitas yang konsisten selama bulan suci akan memberikan nilai tambah bagi mahasiswa dalam membentuk kedisiplinan diri yang kuat serta melatih ketahanan mental saat harus menyelesaikan tugas-tugas berat di bawah kondisi fisik yang sedang berpuasa. Strategi yang tepat tidak hanya fokus pada penyelesaian tugas harian saja, melainkan juga pada pengembangan kompetensi teknis yang relevan dengan kebutuhan industri agar siap diserap oleh pasar kerja setelah lulus nanti.</span></p>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>STRATEGI MANAJEMEN WAKTU DAN ENERGI</strong></span></p>
+<ol>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Pengaturan Jadwal Belajar</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mahasiswa perlu memanfaatkan waktu setelah sahur untuk mengerjakan tugas yang membutuhkan konsentrasi tinggi karena pada saat itulah kondisi otak masih segar dan pasokan energi dari nutrisi makanan masih sangat optimal untuk berpikir secara jernih.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Skala Prioritas Tugas</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Menyusun daftar pekerjaan berdasarkan tingkat urgensi akan membantu mahasiswa untuk tetap fokus pada tanggung jawab yang paling penting sehingga tidak ada waktu yang terbuang sia-sia untuk aktivitas hiburan yang kurang bermanfaat bagi pengembangan diri.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Istirahat Berkualitas Singkat</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mengambil waktu tidur siang yang singkat selama tiga puluh menit dapat mengembalikan kesegaran saraf serta meningkatkan kembali fokus yang mulai menurun akibat rasa kantuk yang sering melanda mahasiswa saat sedang menjalankan ibadah puasa di siang hari.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Pola Makan Bergizi</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mengonsumsi makanan yang kaya akan serat dan protein saat sahur sangat krusial untuk menjaga kestabilan kadar gula darah sehingga mahasiswa memiliki daya tahan tubuh yang kuat untuk tetap aktif bergerak sepanjang hari tanpa merasa lemas.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Batasi Aktivitas Fisik</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mengurangi kegiatan luar ruangan yang menguras tenaga secara berlebihan akan membantu menjaga cadangan cairan dalam tubuh sehingga mahasiswa terhindar dari dehidrasi yang dapat mengganggu performa kognitif saat sedang mengikuti perkuliahan atau mengerjakan praktikum di laboratorium.</span>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>PENINGKATAN KOMPETENSI SIAP KERJA</strong></span></p>
+<ol>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Pelatihan Keterampilan Digital</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mengikuti berbagai kursus daring tentang teknologi terbaru dapat mengisi waktu luang menjelang berbuka puasa dengan pengetahuan yang sangat aplikatif sehingga mahasiswa memiliki keunggulan kompetitif dibandingkan dengan lulusan lain yang tidak memperbarui keahlian mereka secara berkala.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Penyusunan Portofolio Profesional</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mendokumentasikan seluruh proyek akademik dan hasil karya terbaik ke dalam sebuah platform digital secara rapi akan memudahkan perusahaan untuk melihat potensi nyata yang dimiliki oleh mahasiswa saat mereka mengajukan lamaran pekerjaan secara resmi nantinya.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Peluang Jejaring Sosial</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Menghadiri acara diskusi atau webinar bertema karier yang sering diadakan selama bulan Ramadan dapat memperluas koneksi mahasiswa dengan para profesional di bidang industri yang diminati sehingga membuka peluang untuk mendapatkan informasi magang yang relevan.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Penguasaan Bahasa Asing</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Melatih kemampuan berkomunikasi menggunakan bahasa internasional setiap hari secara konsisten akan meningkatkan kepercayaan diri mahasiswa dalam menghadapi wawancara kerja yang menggunakan standar global serta memperluas jangkauan karier mereka hingga ke tingkat mancanegara yang lebih luas.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Simulasi Wawancara Kerja</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Melakukan latihan menjawab pertanyaan wawancara secara mandiri atau bersama teman akan membantu mahasiswa untuk mengasah kemampuan berbicara secara sistematis dan persuasif sehingga mereka tampak lebih siap dan tenang saat bertemu dengan pihak perekrut perusahaan sebenarnya.</span>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>KESIMPULAN</strong></span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Keberhasilan mahasiswa dalam mempertahankan produktivitas selama bulan suci sangat bergantung pada disiplin dalam mengelola energi dan kemauan untuk terus belajar tanpa henti. Dengan menerapkan strategi manajemen waktu yang efektif serta fokus pada pengembangan kompetensi profesional, mahasiswa tidak hanya akan meraih berkah spiritual tetapi juga kesiapan karier yang matang. Persiapan yang dilakukan sejak dini akan menjadi fondasi kuat bagi kesuksesan di dunia kerja yang penuh tantangan. Semoga seluruh upaya yang dilakukan selama bulan ini membawa hasil maksimal bagi masa depan yang lebih cerah.</span></p>

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>CYBER GYZEN</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+     <link rel="stylesheet" href="../static/css/style.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <button class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h2 class="logo">GYZN</h2>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="overlay"></div>
+
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-sidebar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('generate') }}">Generate</a>
+            <a href="{{ url_for('cek') }}">Cek Artikel</a>
+        </nav>
+    </div>
+
+    <!-- MAIN CARD -->
+    <div class="main-card">
+
+        <div class="status-time">
+            <div class="time-content">
+                TIME : <span id="time"></span>
+            </div>
+        </div>
+
+        <div class="btn-login">
+            <div class="icon-btn">
+                <i id="userIcon" class="fa-solid fa-user" onclick="openLogin()"></i>
+            </div>
+            <div class="icon-btn">
+                <i class="fa-solid fa-power-off" onclick="logout()"></i>
+            </div>
+        </div>
+
+        <div class="avatar-glow">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo">
+        </div>
+
+        <h1>CYBER GYZN</h1>
+
+        <div class="status-bar">
+            <span class="dot"></span> SYSTEM OPERATIONAL
+        </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="tools-grid">
+
+        <div class="tool-card active">
+            <div class="tool-icon">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3>GENERATE ARTIKEL</h3>
+            <p>Buat artikel berstandar tinggi menggunakan AI.</p>
+            <form action="{{ url_for('generate') }}">
+                <button class="btn-tool">START GENERATING</button>
+            </form>
+        </div>
+
+        <div class="tool-card">
+            <div class="tool-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>SCAN ARTIKEL</h3>
+            <p>Analisis orisinalitas dan struktur artikel secara mendalam.</p>
+            <form action="{{ url_for('cek') }}">
+                <button class="btn-tool">START SCANNING</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-credit">
+        © 2026 CYBERGYZN BY
+        <b>ALFARI</b>
+    </div>
+
+    <!-- LOGIN POPUP -->
+    <div class="popup-login" id="loginPopup">
+        <div class="login-box">
+
+            <h2>LOGIN</h2>
+
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label>Username</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Password</label>
+                <i class="fa-regular fa-eye-slash toggle-pass" onclick="togglePassword()"></i>
+            </div>
+
+            <div class="divider">Secure Access</div>
+
+            <div class="button-group">
+                <button class="login-submit" onclick="login()">Masuk</button>
+                <button class="btn-exit" onclick="closeLogin(true)">Batal</button>
+            </div>
+
+        </div>
+    </div>
+
+<script src="{{ url_for('static', filename='js/script.js', v='20260302d') }}" defer></script>
+</body>
+</html>

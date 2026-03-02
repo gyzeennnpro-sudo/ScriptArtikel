@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>CYBER GYZEN</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+    <link rel="stylesheet" href="../static/css/cek.css">
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/cek.css') }}"> -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+    <button class="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <h2 class="logo">MyApp</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="overlay"></div>
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-sidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="sidebar-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('generate') }}">Generate</a>
+            <a href="{{ url_for('cek') }}">Cek Artikel</a>
+        </nav>
+    </div>
+
+    <div class="main-card">
+        <img src="{{ url_for('static', filename='images/cooming_soon.png') }}" alt="Coming Soon">
+        <h1>Fitur is cooming soon!</h1>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+Buatlah artikel SEO-friendly dalam Bahasa Indonesia mengenai [MASUKKAN TOPIK DI SINI].
+
+WAJIB MENGIKUTI ATURAN FORMAT BERIKUT TANPA TERKECUALI:
+
+1. Ketentuan Konten:
+- Wajib memiliki 2 paragraf pembuka. Setiap paragraf WAJIB terdiri dari kalimat yang panjang sehingga memenuhi tepat 2 baris teks (minimal 20-25 kata per paragraf).
+- Wajib memiliki 2 Seksi Utama (Header).
+- Setiap Seksi Utama wajib memiliki 5 poin daftar (list).
+- Penjelasan pada setiap poin (li) WAJIB terdiri dari kalimat kompleks yang memenuhi tepat 2 baris teks agar terlihat padat.
+- Dilarang menyertakan simbol &nbsp; di dalam elemen daftar (li).
+- Judul poin (di dalam tag strong) WAJIB menggunakan Bahasa Indonesia murni (DILARANG istilah asing atau tanda kurung).
+- Wajib memiliki bagian Kesimpulan minimal 4 baris teks di akhir artikel sebelum penutup blok kode HTML.
+- Teks bersifat informatif, profesional, dan bebas dari kalimat basa-basi AI di luar code block.
+
+2. Ketentuan Kode HTML (Dilarang menggunakan CSS margin):
+- Font isi: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif.
+- Header Seksi & Kesimpulan: <span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>JUDUL</strong></span>
+- Poin Daftar: <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>POIN</strong></span>
+- Gunakan <ol> dan <li> untuk daftar. Gunakan <p>&nbsp;</p> atau <br>&nbsp; (HANYA di luar tag li) untuk jarak antar elemen (DILARANG pakai properti margin).
+
+3. Aturan Output (Dua Blok Terpisah):
+- LANGSUNG berikan output tanpa kalimat pengantar dari AI di awal jawaban.
+- BLOK KODE 1: Berisi seluruh kode HTML artikel saja (```html ... ```).
+- SEBELUM BLOK KODE 2: Tuliskan kalimat pengantar singkat: ini tag nya
+- BLOK KODE 2: Berisi 3-5 tag dari judul dalam format code block (wajib gunakan ```text agar tombol copy muncul).
+- ATURAN TAG: Setiap kata pada tag WAJIB menggunakan Huruf Kapital di awal kata dan Wajib 1 kata jangan lebih.
+- FORMAT TAG di Blok Kode 2 (Tanpa tanda kutip): Tag1, Tag2, Tag3, Tag4, Tag5
+
+CONTOH STRUKTUR HTML (BLOK 1):
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">[Paragraf 1: Wajib panjang memenuhi 2 baris teks penuh]</span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">[Paragraf 2: Wajib panjang memenuhi 2 baris teks penuh]</span></p>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>JUDUL SEKSI 1</strong></span></p>
+<ol>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Hanya Bahasa Indonesia</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">[Penjelasan wajib panjang hingga mencapai 2 baris teks tanpa &nbsp;]</span>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>KESIMPULAN</strong></span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">[Kesimpulan maximal 3 baris]</span></p>

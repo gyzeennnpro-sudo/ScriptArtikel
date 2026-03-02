@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#0b1120);
+}
+
+/* LOGIN CARD */
+.login-box{
+    width:350px;
+    padding:40px 30px;
+    background:#111827;
+    border-radius:14px;
+    border:1px solid #1e3a8a;
+    box-shadow:0 0 30px rgba(37,99,235,0.25);
+    position:relative;
+}
+
+/* TOP LINE EFFECT */
+.login-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:linear-gradient(90deg,#2563eb,#3b82f6,#2563eb);
+    border-radius:14px 14px 0 0;
+}
+
+.login-box h2{
+    text-align:center;
+    color:#3b82f6;
+    margin-bottom:30px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+/* INPUT */
+.input-group{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.input-group input{
+    width:100%;
+    padding:13px 12px;
+    background:transparent;
+    border:1px solid #334155;
+    border-radius:8px;
+    outline:none;
+    color:#fff;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border-color:#3b82f6;
+    box-shadow:0 0 8px rgba(59,130,246,0.4);
+}
+
+.input-group label{
+    position:absolute;
+    left:12px;
+    top:13px;
+    color:#94a3b8;
+    font-size:14px;
+    pointer-events:none;
+    transition:0.3s;
+    background:#111827;
+    padding:0 4px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    top:-8px;
+    left:10px;
+    font-size:12px;
+    color:#3b82f6;
+}
+
+/* DIVIDER */
+.divider{
+    text-align:center;
+    background-color: #111827;
+    color:#64748b;
+    font-size:12px;
+    margin:10px 0 20px 0;
+    position:relative;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:35%;
+    height:1px;
+    background:#334155;
+}
+
+.divider::before{ left:0; }
+.divider::after{ right:0; }
+
+/* BUTTON GROUP */
+.button-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* BUTTON STYLE */
+.button-group button{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+    position:relative;
+    overflow:hidden;
+}
+
+/* LOGIN */
+.btn-login{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-login:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+    box-shadow:0 8px 15px rgba(37,99,235,0.35);
+}
+
+/* EXIT */
+.btn-exit{
+    background:#1e293b;
+    color:#cbd5e1;
+    border:1px solid #334155;
+}
+
+.btn-exit:hover{
+    background:#334155;
+    transform:translateY(-2px);
+}
+</style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>LOGIN</h2>
+
+    <form>
+        <div class="input-group">
+            <input type="text" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" required>
+            <label>Password</label>
+        </div>
+
+        <div class="divider">Secure Access</div>
+
+        <div class="button-group">
+            <button type="submit" class="btn-login">Masuk</button>
+            <button type="button" class="btn-exit" onclick="window.location.href='index.html'">Keluar</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

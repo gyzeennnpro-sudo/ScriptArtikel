@@ -1,0 +1,54 @@
+HTML
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Bulan Ramadhan bukan sekadar momentum untuk meningkatkan ibadah spiritual semata melainkan juga peluang emas bagi mahasiswa untuk mengasah kompetensi diri secara strategis di tengah jadwal perkuliahan yang cenderung lebih fleksibel dibandingkan bulan lainnya.</span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Pemanfaatan waktu luang menjelang berbuka puasa dengan aktivitas yang produktif akan memberikan dampak signifikan terhadap kesiapan karier mahasiswa dalam menghadapi persaingan dunia kerja yang semakin kompetitif dan dinamis di masa depan nanti.</span></p>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>PENGEMBANGAN KOMPETENSI TEKNIS DAN WAWASAN</strong></span></p>
+<ol>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Pelatihan Daring</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mahasiswa dapat memanfaatkan waktu luang saat menunggu waktu berbuka dengan mengikuti berbagai kursus sertifikasi yang relevan dengan bidang studi utama mereka guna memperkuat portofolio akademik serta kemampuan praktis di industri profesional.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Penguasaan Bahasa</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Meningkatkan kemahiran dalam berkomunikasi menggunakan bahasa internasional menjadi investasi jangka panjang yang sangat berharga untuk memperluas jaringan kerja global serta membuka peluang beasiswa maupun karier di perusahaan berskala besar di luar negeri.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Literasi Digital</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mempelajari perangkat lunak terbaru atau alat analisis data yang sedang populer di pasar kerja akan memberikan nilai tambah yang membedakan seorang mahasiswa dari kandidat lainnya saat proses seleksi kerja yang sangat ketat.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Bedah Artikel</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Membaca dan menganalisis jurnal penelitian atau berita industri terkini secara konsisten selama bulan puasa dapat membantu mahasiswa memperdalam pemahaman teoretis sekaligus mengikuti perkembangan tren terbaru yang terjadi di dunia bisnis saat ini.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Proyek Mandiri</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Membangun proyek kecil seperti blog profesional atau aplikasi sederhana merupakan langkah nyata untuk menunjukkan kemampuan eksekusi dan kreativitas mahasiswa dalam menghasilkan sebuah karya nyata yang dapat dipamerkan kepada calon pemberi kerja nantinya.</span>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>PENGUATAN JEJARING DAN KEMAMPUAN INTERPERSONAL</strong></span></p>
+<ol>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Seminar Daring</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Menghadiri webinar yang menghadirkan para pakar industri selama bulan suci merupakan cara efektif untuk mendapatkan wawasan langsung mengenai realitas dunia kerja serta tips praktis dalam membangun karier yang sukses sejak dini.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Optimalisasi Profil</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Memperbarui informasi pada media sosial profesional dengan mencantumkan pencapaian terbaru dan pengalaman organisasi akan meningkatkan visibilitas mahasiswa di mata para perekrut yang sering mencari bakat baru melalui platform digital secara rutin.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Kegiatan Sosial</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Menjadi relawan dalam berbagai aksi kemanusiaan di bulan Ramadhan tidak hanya mendatangkan berkah spiritual tetapi juga mengasah empati serta kemampuan kepemimpinan yang sangat dibutuhkan dalam lingkungan kerja kolaboratif yang sehat dan produktif.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Diskusi Kelompok</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Mengadakan sesi diskusi ringan bersama rekan sejawat mengenai topik-topik karier dapat memperluas sudut pandang mahasiswa sekaligus melatih keterampilan berbicara di depan umum serta kemampuan dalam menyampaikan ide secara persuasif dan sistematis.</span>
+    </li>
+    <li>
+        <span class="text-big" style="font-family:Tahoma, Geneva, sans-serif; font-size: 18px;"><strong>Pencarian Mentor</strong></span><br>
+        <span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Berusaha menjalin komunikasi dengan senior atau alumni yang telah sukses di bidangnya untuk mendapatkan bimbingan karier adalah langkah strategis dalam memetakan rencana masa depan dengan lebih matang dan terukur berdasarkan pengalaman nyata.</span>
+    </li>
+</ol>
+<p>&nbsp;</p>
+<p><span class="text-huge" style="background-color:hsl(180,75%,60%);font-family:Verdana, Geneva, sans-serif; font-size: 24px;"><strong>KESIMPULAN</strong></span></p>
+<p><span style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Meningkatkan daya saing karier selama bulan Ramadhan memerlukan disiplin tinggi dan manajemen waktu yang baik agar keseimbangan antara ibadah dan pengembangan diri tetap terjaga secara optimal. Dengan mengambil langkah nyata seperti mengikuti pelatihan, memperluas jejaring, serta mengoptimalkan profil profesional, mahasiswa dapat memanfaatkan momentum suci ini sebagai batu loncatan menuju kesuksesan di masa depan. Konsistensi dalam belajar dan beradaptasi dengan kebutuhan industri akan membuat mahasiswa lebih siap menghadapi tantangan global setelah menyelesaikan masa studinya. Akhirnya, semangat Ramadhan harus dijadikan bahan bakar untuk terus bertumbuh menjadi pribadi yang lebih kompeten dan berkualitas di dunia profesional.</span></p>

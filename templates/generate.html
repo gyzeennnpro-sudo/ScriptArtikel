@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>CYBER GYZEN</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/generate.css') }}">
+    <!-- <link rel="stylesheet" href="../static/css/generate.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup-report" id="reportPopup">
+    <div class="report-box">
+        <h2>PROGRESS</h2>
+
+        <!-- LIST ARTIKEL -->
+        <div class="article-list">
+            <div class="article" id="art1">
+                <span class="title">Artikel 1</span>
+                <span class="status"><i class="fa-regular fa-circle"></i></span>
+            </div>
+            <div class="article" id="art2">
+                <span class="title">Artikel 2</span>
+                <span class="status"><i class="fa-regular fa-circle"></i></span>
+            </div>
+            <div class="article" id="art3">
+                <span class="title">Artikel 3</span>
+                <span class="status"><i class="fa-regular fa-circle"></i></span>
+            </div>
+            <div class="article" id="art4">
+                <span class="title">Artikel 4</span>
+                <span class="status"><i class="fa-regular fa-circle"></i></span>
+            </div>
+            <div class="article" id="art5">
+                <span class="title">Artikel 5</span>
+                <span class="status"><i class="fa-regular fa-circle"></i></span>
+            </div>
+        </div>
+
+        <!-- PROGRESS COUNT -->
+        <div class="progress-count" id="progressCount">Artikel [0/5]</div>
+
+        <!-- PROGRESS BAR + PERSEN -->
+        <div class="progress-container">
+            <div class="progress-bar" id="reportProgress"></div>
+            <span class="progress-percent" id="progressPercent">0%</span>
+        </div>
+
+        <!-- TOMBOL TUTUP -->
+        <button onclick="closeReport()">Tutup</button>
+    </div>
+</div>
+
+    <header class="main-header">
+    <button class="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <h2 class="logo">GYZN</h2>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="overlay"></div>
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-sidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="sidebar-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('generate') }}">Generate</a>
+            <a href="{{ url_for('cek') }}">Cek Artikel</a>
+        </nav>
+    </div>
+
+
+    <div class="main-card">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>Format Judul</h3>
+            </div>
+            <div class="content-area">
+                <ol>
+                    <li>Apa Saja Skill Wajib yang Harus Dimiliki Mahasiswa agar Cepat Dilirik Dunia Kerja? Ini Strategi Latihannya Sejak Kuliah</li>
+                    <li>Bagaimana Mental Mahasiswa Mempengaruhi Kesiapan Kerja dan Cara Melatihnya agar Lebih Tahan Tekanan?</li>
+                    <li>Mengapa Banyak Mahasiswa Punya Skill tapi Tetap Sulit Dapat Kerja? Ini Strategi yang Sering Terlewat</li>
+                    <li>Bagaimana Cara Mahasiswa Menyusun Strategi Karier yang Realistis Tanpa Menunggu Lulus Kuliah?</li>
+                    <li>Apa Peran Skill Non-Akademik dalam Dunia Kerja dan Tips Mahasiswa Mengembangkannya Secara Konsisten</li>
+                </ol>
+            </div>
+
+            <details class="usage-guide">
+                <summary class="usage-guide-head">
+                    <span><i class="fa-solid fa-circle-info"></i> PANDUAN PEMAKAIAN</span>
+                    <i class="fa-solid fa-chevron-down guide-arrow"></i>
+                </summary>
+                <div class="usage-guide-body">
+                    <ul>
+                        <li>Masukkan judul sesuai format</li>
+                        <li>Setelah berhasil generate, masukkan poster secara manual</li>
+                        <li>Wajib periksa kembali artikel yang gagal</li>
+                        <li>Bot kadang melakukan kesalahan</li>
+                        <li>Periksa kembali artikel setelah di generate</li>
+                        <li>Hapus beberapa tag jika merasa tidak perlu</li>
+                    </ul>
+                    <p class="guide-warning">
+                        Bot hanya generate artikel, tidak termasuk posternya. Gunakan bot ini hanya saat jam kerja, gunakan bot ini dengan bijak!
+                    </p>
+                </div>
+            </details>
+
+
+            <div class="input-title">
+                <div class="card-header">
+                    <i class="fa-solid fa-pen"></i>
+                    <h3>Masukkan Judul</h3>
+                </div>
+
+                <textarea id="input" placeholder="Masukkan Judul Sesuai Format"></textarea>
+                <button type="button" onclick="kirim()">
+                    <i class="fa-solid fa-robot"></i>
+                    Generate Artikel
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-credit">
+        © 2026 CYBERGYZN BY
+        <b>ALFARI</b>
+    </div>
+
+    <div id="authWarning" class="popup-auth">
+        <div class="popup-auth-box">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Silahkan login terlebih dahulu!</p>
+            <div class="button-group">
+                <button onclick="closeAuthWarning()">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="{{ url_for('static', filename='js/script.js', v='20260302d') }}" defer></script>
+<!-- <script src="../static/js/script.js"></script> -->
+</body>
+</html>
