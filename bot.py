@@ -18,7 +18,11 @@ def _raise_if_cancelled(should_cancel):
 
 def Artikel_SC(judul, idx, should_cancel=None):
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        # browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox"]
+        )
         context = browser.new_context()
         page = context.new_page()
 

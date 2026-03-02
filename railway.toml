@@ -1,0 +1,8 @@
+[build]
+builder = "NIXPACKS"
+
+[phases.build]
+cmds = [
+  "pip install -r requirements.txt",
+  "playwright install chromium"
+]

@@ -63,7 +63,11 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
 
     for attempt in range(1, max_attempts + 1):
         with sync_playwright() as playwright:
-            browser = playwright.chromium.launch(headless=False)
+            # browser = playwright.chromium.launch(headless=False)
+            browser = playwright.chromium.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-setuid-sandbox"]
+            )
             context = browser.new_context()
             page = context.new_page()
 
