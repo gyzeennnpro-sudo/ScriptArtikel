@@ -3,8 +3,8 @@ import re
 import uuid
 import threading
 from flask import Flask, render_template, request, jsonify, session
-from bot_prompt import run_bot
 from dotenv import load_dotenv
+# from bot_prompt import run_bot
 
 load_dotenv()
 
@@ -46,6 +46,8 @@ def _update_task_item(task_id, item_index, **fields):
 
 
 def _run_batch(task_id, judul_list):
+    from bot_prompt import run_bot
+
     for idx, judul in enumerate(judul_list, start=1):
         item_index = idx - 1
         with TASKS_LOCK:
