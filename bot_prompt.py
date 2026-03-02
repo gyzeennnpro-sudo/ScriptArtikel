@@ -63,28 +63,7 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
 
     for attempt in range(1, max_attempts + 1):
         with sync_playwright() as playwright:
-            # browser = playwright.chromium.launch(headless=False)
-            try:
-                print("Launching browser...")
-                browser = playwright.chromium.launch(
-                    headless=True,
-                    args=[
-                        "--no-sandbox",
-                        "--disable-setuid-sandbox",
-                        "--disable-dev-shm-usage",
-                        "--single-process"
-                    ]
-                )
-                print("Browser launched!")
-
-                page = browser.new_page()
-                print("Opening page...")
-                page.goto("https://example.com", timeout=60000)
-                print("Page loaded!")
-
-            except Exception as e:
-                print("ERROR TERJADI:", str(e))
-                raise e
+            browser = playwright.chromium.launch(headless=False)
             
             context = browser.new_context()
             page = context.new_page()
