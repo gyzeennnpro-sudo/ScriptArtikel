@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = "super_secret_key_123"
+app.secret_key = os.getenv("SECRET_KEY")
 
 DEV_USER = os.getenv("DEV_USER")
 DEV_PASS = os.getenv("DEV_PASS")
