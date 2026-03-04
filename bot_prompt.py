@@ -58,8 +58,26 @@ def _wait_send_finished(page, timeout_sec=300, should_cancel=None):
     raise TimeoutError("Timeout: tombol Stop tidak hilang.")
 
 
+def _wait_first_gemini_output(page, timeout_sec=90, should_cancel=None):
+    start = t.time()
+    while t.time() - start < timeout_sec:
+        _raise_if_cancelled(should_cancel)
+        code_blocks = page.locator("code-block")
+        if code_blocks.count() > 0:
+            text = code_blocks.nth(0).inner_text().strip()
+            if text:
+                return
+        t.sleep(0.4)
+    raise TimeoutError("Stuck: Gemini tidak mulai menghasilkan output.")
+
+
+def _remaining_timeout(deadline_ts):
+    return max(0.0, deadline_ts - t.time())
+
+
 def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post_done=None):
-    max_attempts = 2
+    max_attempts = 4
+    attempt_timeout_sec = 90
 
     for attempt in range(1, max_attempts + 1):
         with sync_playwright() as playwright:
@@ -84,10 +102,39 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
                 _raise_if_cancelled(should_cancel)
 
                 page.get_by_role("button", name="Send message").click()
-                _wait_send_finished(page, should_cancel=should_cancel)
+                deadline_ts = t.time() + attempt_timeout_sec
+
+                first_output_timeout = _remaining_timeout(deadline_ts)
+                if first_output_timeout <= 0:
+                    raise TimeoutError(
+                        f"Stuck: melebihi {attempt_timeout_sec} detik sebelum output pertama."
+                    )
+                _wait_first_gemini_output(
+                    page,
+                    timeout_sec=first_output_timeout,
+                    should_cancel=should_cancel
+                )
+
+                send_finished_timeout = _remaining_timeout(deadline_ts)
+                if send_finished_timeout <= 0:
+                    raise TimeoutError(
+                        f"Stuck: melebihi {attempt_timeout_sec} detik sebelum tombol Stop hilang."
+                    )
+                _wait_send_finished(
+                    page,
+                    timeout_sec=send_finished_timeout,
+                    should_cancel=should_cancel
+                )
+
+                stable_timeout = _remaining_timeout(deadline_ts)
+                if stable_timeout <= 0:
+                    raise TimeoutError(
+                        f"Stuck: melebihi {attempt_timeout_sec} detik sebelum artikel stabil."
+                    )
 
                 artikel, code_blocks = _wait_stable_artikel_text(
                     page,
+                    timeout_sec=stable_timeout,
                     should_cancel=should_cancel
                 )
                 is_valid, reason = _validate_artikel_text(artikel)
@@ -116,6 +163,15 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
                     on_gemini_done()
 
                 break
+            except TimeoutError as e:
+                if attempt < max_attempts:
+                    print(
+                        f"[WARN idx={idx}] attempt {attempt} stuck/timeout: {e}. "
+                        "Auto refresh/restart dengan judul yang sama..."
+                    )
+                    t.sleep(2)
+                    continue
+                raise
             finally:
                 context.close()
                 browser.close()

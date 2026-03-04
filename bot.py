@@ -8,9 +8,6 @@ from playwright.sync_api import sync_playwright
 usrname = "ayu12345"
 passwd = "gektita123"
 
-date = datetime.now().strftime("%Y-%m-%dT%H:%M")
-
-
 def _raise_if_cancelled(should_cancel):
     if should_cancel and should_cancel():
         raise InterruptedError("Task dibatalkan oleh user.")
@@ -91,7 +88,9 @@ def Artikel_SC(judul, idx, should_cancel=None):
         t.sleep(0.5)
         _raise_if_cancelled(should_cancel)
 
-        page.get_by_role("textbox", name="Tanggal Publish").fill(date)
+        page.get_by_role("textbox", name="Tanggal Publish").fill(
+            datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        )
         t.sleep(0.5)
         _raise_if_cancelled(should_cancel)
 
