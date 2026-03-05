@@ -1,4 +1,4 @@
-import re
+﻿import re
 import traceback
 import time as t
 from datetime import datetime
@@ -89,7 +89,7 @@ def Artikel_SC(judul, idx, should_cancel=None):
         _raise_if_cancelled(should_cancel)
 
         page.get_by_role("textbox", name="Tanggal Publish").fill(
-            datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+            datetime.now().strftime("%Y-%m-%dT%H:%M")
         )
         t.sleep(0.5)
         _raise_if_cancelled(should_cancel)
@@ -105,15 +105,17 @@ def Artikel_SC(judul, idx, should_cancel=None):
         _raise_if_cancelled(should_cancel)
 
         try:
-            save_btn = page.get_by_role("button", name=re.compile("Save Data", re.I))
-            save_btn.wait_for(state="visible", timeout=15000)
-            save_btn.click(no_wait_after=True)
-            page.wait_for_timeout(3000)
+            page.get_by_role("button", name=re.compile("Save Data", re.I))
+            t.sleep(5)
+
             print(f"Done idx={idx}", flush=True)
+            print(f"✅ Done artikel {idx} berhasil di upload!")
         except Exception as e:
+            print("❌ GAGAL UPLOAD ARTIKEL")
             print(f"[ERROR idx={idx}] {e}", flush=True)
             print(traceback.format_exc(), flush=True)
             raise
-        finally:
-            context.close()
-            browser.close()
+        
+        context.close()
+        browser.close()
+

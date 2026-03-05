@@ -376,6 +376,7 @@ body.generate-enter .main-card {
     background: linear-gradient(135deg, #1f1f2e, #2e2e4a);
     color: #fff;
     padding: 25px 30px;
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     width: 440px;
     text-align: center;

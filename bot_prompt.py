@@ -1,4 +1,4 @@
-import os
+﻿import os
 import re
 import time as t
 from bot import Artikel_SC
@@ -58,7 +58,7 @@ def _wait_send_finished(page, timeout_sec=300, should_cancel=None):
     raise TimeoutError("Timeout: tombol Stop tidak hilang.")
 
 
-def _wait_first_gemini_output(page, timeout_sec=90, should_cancel=None):
+def _wait_first_gemini_output(page, timeout_sec=50, should_cancel=None):
     start = t.time()
     while t.time() - start < timeout_sec:
         _raise_if_cancelled(should_cancel)
@@ -77,7 +77,7 @@ def _remaining_timeout(deadline_ts):
 
 def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post_done=None):
     max_attempts = 4
-    attempt_timeout_sec = 90
+    attempt_timeout_sec = 50
 
     for attempt in range(1, max_attempts + 1):
         with sync_playwright() as playwright:
@@ -150,14 +150,14 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
                 os.makedirs("data/result/artikel", exist_ok=True)
                 with open(f"data/result/artikel/artikel-{idx}.txt", "w", encoding="utf-8") as f:
                     f.write(artikel)
-                print("Berhasil save output artikel")
+                print("ðŸ“„Berhasil save output artikel")
 
                 if code_blocks.count() > 1:
                     hastag = code_blocks.nth(1).inner_text()
                     os.makedirs("data/result/hastag", exist_ok=True)
                     with open(f"data/result/hastag/hastag-{idx}.txt", "w", encoding="utf-8") as f:
                         f.write(hastag)
-                    print("Berhasil save output hastag")
+                    print("ðŸ“„Berhasil save output hastag")
 
                 if on_gemini_done:
                     on_gemini_done()
@@ -181,3 +181,4 @@ def run_bot(prompt, judul, idx, should_cancel=None, on_gemini_done=None, on_post
     Artikel_SC(judul, idx, should_cancel=should_cancel)
     if on_post_done:
         on_post_done()
+
